@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_layouts/column.dart';
-import 'package:flutter_layouts/excercise.dart';
-import 'package:flutter_layouts/list_view.dart';
-import 'package:flutter_layouts/row.dart';
+import 'package:flutter_layouts/gridview.dart';
+import 'package:flutter_layouts/stack.dart';
+import 'package:flutter_layouts/stack_excercise.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
     debugShowCheckedModeBanner: false,
-      home: ExercisePage()
+      home: GridViewPage()
     );
   }
 }
