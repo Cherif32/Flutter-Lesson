@@ -1,5 +1,5 @@
-import 'package:bloc_state_management/bloc/counter_bloc.dart';
-import 'package:bloc_state_management/screens/home_screen.dart';
+import 'package:bloc_state_management/features/checkbox_and_password_visibility/bloc/my_form_bloc.dart';
+import 'package:bloc_state_management/features/checkbox_and_password_visibility/screens/checkbox_password_visiblily.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -14,8 +14,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => CounterBloc(),
-      child: MaterialApp(debugShowCheckedModeBanner: false, home: HomeScreen()),
+      create: (context) => MyFormBloc(),
+      child: MaterialApp(debugShowCheckedModeBanner: false, home: CheckboxVisibility()),
     );
   }
 }
